@@ -22,4 +22,14 @@ export default new Vuex.Store({
   mutations: {},
   actions: {},
   modules: {},
+  getters: {
+    /**
+     * 記事一覧を返す.
+     * @param state - ステートオブジェクト
+     * @returns - 記事一覧情報
+     */
+    getArticles(state) {
+      return state.articles;
+    },
+  },
 });
