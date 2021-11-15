@@ -28,6 +28,19 @@ export default new Vuex.Store({
     addArticle(state, payload) {
       state.articles.unshift(payload.article);
     },
+    /**
+     * コメントを追加する.
+     * @param state - ステートオブジェクト
+     * @param payload - コメント情報
+     */
+    addComment(state, payload) {
+      const commentArticleId = payload.comment.articleId;
+      for (const article of state.articles) {
+        if (article.id === commentArticleId) {
+          article.commentList.unshift(payload.comment);
+        }
+      }
+    },
   },
   actions: {},
   modules: {},
