@@ -1,3 +1,5 @@
+import { Comment } from "./Comment";
+
 export class Article {
   constructor(
     private _id: number,

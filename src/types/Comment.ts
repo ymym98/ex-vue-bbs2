@@ -1,8 +1,8 @@
 export class Comment {
   constructor(
     private _id: number,
-    private _name: number,
-    private _content: number,
+    private _name: string,
+    private _content: string,
     private _articleId: number
   ) {}
 
@@ -14,19 +14,19 @@ export class Comment {
     this._id = id;
   }
 
-  public get name(): number {
+  public get name(): string {
     return this._name;
   }
 
-  public set name(name: number) {
+  public set name(name: string) {
     this._name = name;
   }
 
-  public get content(): number {
+  public get content(): string {
     return this._content;
   }
 
-  public set content(content: number) {
+  public set content(content: string) {
     this._content = content;
   }
 

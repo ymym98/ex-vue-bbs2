@@ -1,10 +1,12 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import { Article } from "@/types/Article";
+import { Comment } from "@/types/Comment";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
+  strict: true,
   state: {
     articles: [
       new Article(3, "佐藤", "佐藤さんの記事", []),
