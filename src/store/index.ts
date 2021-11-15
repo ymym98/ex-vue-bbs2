@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import { Article } from "@/types/Article";
 
 Vue.use(Vuex);
 
